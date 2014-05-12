@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<title>MonkeyLearn Javascript Integration</title>
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+
+  $.ajax({
+      url : "http://app.monkeylearn.com/api/v1/categorizer/hDDngsX8/classify_text/",
+      type : "POST",
+      headers: {
+          "Authorization": "token <YOUR TOKEN GOES HERE>",
+      },
+      data : {
+        text: "This is a text to try language detection."
+      },
+      success : function(result) {
+        alert(result);
+      },
+      error : function(e) {
+        alert('Error: ' + e);
+      }
+  });
+
+</script>
+
+</head>
+</html>

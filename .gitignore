@@ -1,0 +1,7 @@
+dotnet/dotnet_integration/packages
+dotnet/dotnet_integration/dotnet_integration/bin
+dotnet/dotnet_integration/dotnet_integration/obj
+dotnet/dotnet_integration/dotnet_integration/Properties
+java/java-integration/target
+*.pyc
+
